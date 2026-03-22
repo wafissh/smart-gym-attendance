@@ -183,6 +183,13 @@ Proyek ini dikerjakan secara mandiri sebagai latihan dokumentasi System Analyst,
 - Pembuatan Requirements Traceability Matrix
 
 ---
+## Wireframe Dashboard 
+
+### Dashboard Admin
+![Dashboard Admin](docs/images/dashboard-admin.png)
+
+### Dashboard Owner
+![Dashboard Owner](docs/images/dashboard-owner.png)
 
 ## Tentang
 
