@@ -11,21 +11,38 @@ Gym terdekat dari lokasi saya masih menggunakan sistem absensi manual yang menye
 
 ---
 
-## Demo Face Recognition
-
-> Kode face recognition engine sudah diimplementasikan secara terpisah menggunakan Python + OpenCV.
+## Demo Sistem
 
 ```bash
 # Clone repo
-git clone https://github.com/username/smart-gym-attendance.git
+git clone https://github.com/wafissh/smart-gym-attendance.git
 cd smart-gym-attendance
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Jalankan face scanner
-python face_scanner.py
+# Buat folder dataset untuk menyimpan foto member
+mkdir dataset
 ```
+
+Jalankan sistem:
+
+```bash
+python main.py
+```
+
+Akan muncul menu interaktif:
+
+```
+[1] Test deteksi wajah dari gambar
+[2] Test similarity dua foto
+[3] Daftarkan member baru (via webcam)
+[4] Jalankan sistem absensi realtime
+[5] Lihat log absensi
+[0] Keluar
+```
+
+> Model yang dibutuhkan (`blaze_face_short_range.tflite` dan `mobilenet_v3_small.tflite`) sudah tersedia di folder `models/`.
 
 ---
 
@@ -141,7 +158,7 @@ ADMIN  ──(1 to many)──► ATTENDANCE (absensi manual)
 
 | Komponen | Teknologi |
 |---|---|
-| Face Recognition | Python, OpenCV, face_recognition library |
+| Face Recognition | Python, MediaPipe, OpenCV |
 | Backend | Python (Flask / FastAPI) |
 | Database | PostgreSQL |
 | Frontend Dashboard | React.js |
@@ -161,10 +178,16 @@ smart-gym-attendance/
 │   ├── Flowchart_CheckIn_SmartGym.drawio
 │   ├── TestCase_SmartGym_v1.0.docx
 │   └── RTM_SmartGym_v1.0.docx
-├── src/
-│   ├── face_scanner.py
-│   └── ...
+├── main.py
 ├── requirements.txt
+├── models/
+│   ├── blaze_face_short_range.tflite
+│   └── mobilenet_v3_small.tflite
+├── dataset/               ← buat manual, tidak di-track git
+│   └── nama_member/
+│       ├── face_0.jpg
+│       ├── face_1.jpg
+│       └── face_2.jpg
 └── README.md
 ```
 
@@ -183,18 +206,11 @@ Proyek ini dikerjakan secara mandiri sebagai latihan dokumentasi System Analyst,
 - Pembuatan Requirements Traceability Matrix
 
 ---
-## Wireframe Dashboard 
-
-### Dashboard Admin
-![Dashboard Admin](docs/images/dashboard-admin.png)
-
-### Dashboard Owner
-![Dashboard Owner](docs/images/dashboard-owner.png)
 
 ## Tentang
 
-**Wien M. Hafizhurrohman — Fasilkom UI**
-Semester 2 
+**Mahasiswa Sistem Informasi — Fasilkom UI**
+Semester 2 | Peminatan: Manajemen Tata Kelola
 
 Tertarik di bidang: System Analysis · IT Audit · IT Governance
 
