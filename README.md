@@ -193,8 +193,8 @@ Proyek ini dikerjakan secara mandiri sebagai latihan dokumentasi System Analyst,
 
 ## Tentang
 
-**Mahasiswa Sistem Informasi — Fasilkom UI**
-Semester 2 | Peminatan: Manajemen Tata Kelola
+**Wien M. Hafizhurrohman — Fasilkom UI**
+Semester 2 
 
 Tertarik di bidang: System Analysis · IT Audit · IT Governance
 
