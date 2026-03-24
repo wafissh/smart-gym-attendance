@@ -11,7 +11,7 @@ Gym terdekat dari lokasi saya masih menggunakan sistem absensi manual yang menye
 
 ---
 
-## Demo Sistem
+## Cara Menjalankan
 
 ```bash
 # Clone repo
@@ -58,6 +58,18 @@ Seluruh artefak analisis sistem tersedia di folder `/docs`:
 | Flowchart Check-in | Alur proses check-in happy path & alternatif | `docs/Flowchart_CheckIn_SmartGym.drawio` |
 | Test Case Document | 23 test case dari FR-01 sampai FR-08 | `docs/TestCase_SmartGym_v1.0.docx` |
 | Traceability Matrix | RTM 100% coverage FR → US → AC → TC → NFR | `docs/RTM_SmartGym_v1.0.docx` |
+
+---
+
+## Wireframe Dashboard
+
+### Dashboard Admin
+![Dashboard Admin](docs/images/dashboard-admin.png)
+
+### Dashboard Owner
+![Dashboard Owner](docs/images/dashboard-owner.png)
+
+> File HTML interaktif tersedia di `docs/wireframe-admin.html` dan `docs/wireframe-owner.html` — buka di browser untuk tampilan lengkap.
 
 ---
 
